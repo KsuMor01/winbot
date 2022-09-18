@@ -12,6 +12,7 @@ class WinBot(Bot):
         super().__init__(token)
         self.lottery: lottery.Lottery = Optional
 
+
 bot = WinBot(os.environ["KEY"])
 
 for bp in load_blueprints_from_package("blueprints"):
